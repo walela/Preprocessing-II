@@ -23,6 +23,11 @@ header {
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0px;
+        text-decoration: justify;
+      }
     }
 
     .img-content {
@@ -32,6 +37,12 @@ header {
       img {
         border-radius: 10px;
       }
+      @media @mobile {
+        width: 100%;
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
     }
   }
 
@@ -48,6 +59,9 @@ header {
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -56,6 +70,9 @@ header {
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -68,6 +85,9 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 75%;
+      }
     }
     .btn {
       .button-mixin(@button-bg, lightyellow);
@@ -76,6 +96,14 @@ header {
       font-size: 2em;
       padding: 10px 5px;
       text-align: center;
+      @media @mobile {
+        width: 100%;
+        background-color: lighten(@button-bg, 5%)
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
     }
   }
 } // home

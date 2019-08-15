@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -178,12 +178,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .inner {
-    display: block;
+  .navigation .inner {
+    flex-direction: column;
   }
 }
 nav a {
@@ -204,7 +204,7 @@ nav a {
   padding: 20px;
 }
 header .intro {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 header .intro h2 {

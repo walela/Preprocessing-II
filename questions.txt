@@ -1,0 +1,2 @@
+button text color? not white;
+get buttons to reduce width without using percentages;

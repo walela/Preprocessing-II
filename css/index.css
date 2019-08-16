@@ -313,7 +313,7 @@ header .intro p {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 80%;
   }
 }
 .home .content-pick .btn {
